@@ -29,5 +29,6 @@
 ### Установка
 ### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/Dowload.jpg)
 ## Выводы
+Установил последнюю версию Git для Windows
 ## Лабораторная работа №2
 ### Настройка
