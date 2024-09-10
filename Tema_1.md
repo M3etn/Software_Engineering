@@ -45,6 +45,8 @@
 ### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/Add_file.jpg)
 ## Вывод
 Добавили и подготовили файл к коммиту, а также проверили его статус
-## Лабораторная работа №4
+## Лабораторная работа №5
 ### Фиксация изменений
 ### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/First_commit.jpg)
+## Вывод
+Создали первый коммит и получили информацию про него
