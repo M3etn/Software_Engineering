@@ -47,3 +47,4 @@
 Добавили и подготовили файл к коммиту, а также проверили его статус
 ## Лабораторная работа №4
 ### Фиксация изменений
+### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/First_commit.jpg)
