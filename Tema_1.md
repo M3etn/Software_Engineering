@@ -32,3 +32,6 @@
 Установил последнюю версию Git для Windows
 ## Лабораторная работа №2
 ### Настройка
+### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/Settings.jpg)
+## Выводы
+Настроили Git, добавили имя пользователя и электронную почту
