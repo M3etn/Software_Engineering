@@ -50,3 +50,8 @@
 ### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/First_commit.jpg)
 ## Вывод
 Создали первый коммит и получили информацию про него
+## Лабораторная работа №6
+### Подключение к удаленному репозиторию
+### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/Remote.jpg)
+## Вывод
+Подключились к удаленному репозиторию и загрузили в него первую версию файла 
