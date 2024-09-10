@@ -27,7 +27,7 @@
 - к.э.н., доцент Панов М.А.
 ## Лабораторная работа №1
 ### Установка
-### [Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/Dowload.jpg)
+### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/Dowload.jpg)
 ## Выводы
 ## Лабораторная работа №2
 ### Настройка
