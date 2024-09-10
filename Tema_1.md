@@ -28,15 +28,20 @@
 ## Лабораторная работа №1
 ### Установка
 ### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/Dowload.jpg)
-## Выводы
-Установил последнюю версию Git для Windows
+## Вывод
+Установили последнюю версию Git для Windows
 ## Лабораторная работа №2
 ### Настройка
 ### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/Settings.jpg)
-## Выводы
+## Вывод
 Настроили Git, добавили имя пользователя и электронную почту
 ## Лабораторная работа №3
 ### Создание нового репозитория
 ### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/Repository.jpg)
-## Выводы
-Создал новый репозиторий
+## Вывод
+Создали новый репозиторий
+## Лабораторная работа №4
+### Подготовка файлов
+### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/Add_file.jpg)
+## Вывод
+Добавили и подготовили файл к коммиту, а также проверили его статус
