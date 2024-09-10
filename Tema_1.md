@@ -57,4 +57,8 @@
 Подключились к удаленному репозиторию и загрузили в него первую версию файла 
 ## Лабораторная работа №7
 ### Ветвление
+### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/Branch.jpg)
+### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/Merge.jpg)
+## Вывод
+Создали новую ветку и сделали слияние с основной
 
