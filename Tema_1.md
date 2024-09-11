@@ -96,7 +96,11 @@
 ### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/Conflict.jpg)
 ## Вывод
 Научились исправлять конфликты при слияние "веток" проекта
-
+## Лабораторная работа №15
+### Настройка .gitignore
+### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/gitignore.jpg)
+## Вывод
+Освоил настройку .gitignore
 
 
 
