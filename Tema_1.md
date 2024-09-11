@@ -61,4 +61,21 @@
 ### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/Merge.jpg)
 ## Вывод
 Создали новую ветку и сделали слияние с основной
+## Лабораторная работа №8
+### Особенности применения «Фетч»
+### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/Fetch.jpg)
+## Вывод
+Научились использовать Фетч
+## Лабораторная работа №9
+### Удаление файлов, веток, локальных и удалённых репозиториев
+### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/Delete_Branch.jpg)
+## Вывод
+Научились удалять файлы,ветки локальных и удалённых репозиториев 
+## Лабораторная работа №10
+###  Отслеживание изменений в коммитах
+### ![Результат](https://github.com/M3etn/Software_Engineering/blob/Tema_1/Pictures/Git_log.jpg)
+## Вывод
+Умеем отслеживать изменения в коммитах
+
+
 
