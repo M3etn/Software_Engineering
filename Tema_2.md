@@ -184,7 +184,7 @@ VIVOD
 print(not True)
 ```
 ### Результат.
-PNG??
+![](Pictures/SLab_2_1.jpg)
 
 ## Выводы
 VIVOD
@@ -197,7 +197,7 @@ one, two, three = 5, 10, 15
 print(one,two,three)
 ```
 ### Результат.
-PNG??
+![](Pictures/SLab_2_2.jpg)
 
 ## Выводы
 VIVOD
@@ -210,7 +210,7 @@ intinput = int(input())
 print(intinput)
 ```
 ### Результат.
-PNG??
+![](Pictures/SLab_2_3.jpg)
 
 ## Выводы
 VIVOD
@@ -223,7 +223,7 @@ line = 'cat'
 print(line * 6)
 ```
 ### Результат.
-PNG??
+![](Pictures/SLab_2_4.jpg)
 
 ## Выводы
 VIVOD
@@ -236,7 +236,7 @@ day, month, year = 18,"сентября",2024
 print(f"Сегодня {day} {month} {year} ", end="Всего хорошего!")
 ```
 ### Результат.
-PNG??
+![](Pictures/SLab_2_5.jpg)
 
 ## Выводы
 VIVOD
@@ -249,7 +249,7 @@ line = "Hello World"
 print(line[:5] + " my " + line[-5:])
 ```
 ### Результат.
-PNG??
+![](Pictures/SLab_2_6.jpg)
 
 ## Выводы
 VIVOD
@@ -261,7 +261,7 @@ VIVOD
 print(len('Hello World'))
 ```
 ### Результат.
-PNG??
+![](Pictures/SLab_2_7.jpg)
 
 ## Выводы
 VIVOD
@@ -273,7 +273,7 @@ VIVOD
 print("HELLO WORLD".lower())
 ```
 ### Результат.
-PNG??
+![](Pictures/SLab_2_8.jpg)
 
 ## Выводы
 VIVOD
@@ -288,7 +288,7 @@ average = (num1 + num2) / 2
 print(average)
 ```
 ### Результат.
-PNG??
+![](Pictures/SLab_2_9.jpg)
 
 ## Выводы
 VIVOD
@@ -302,7 +302,7 @@ count_a = user_input.lower().count('a')
 print(f"Количество букв 'a' в строке: {count_a}")
 ```
 ### Результат.
-PNG??
+![](Pictures/SLab_2_10.jpg)
 
 ## Выводы
 VIVOD
