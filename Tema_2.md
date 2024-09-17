@@ -50,7 +50,7 @@ print(8914.256-3201.64)
 print(19977+381788-8914.256-3201.128)
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_2_2.jpg)
 
 ## Выводы
 VIVOD
@@ -69,7 +69,7 @@ two = 'World!'
 print(one + two)
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_2_3.jpg)
 
 ## Выводы
 VIVOD
@@ -88,7 +88,7 @@ three = None
 print(str (three))
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_2_4.jpg)
 
 ## Выводы
 VIVOD
@@ -103,7 +103,7 @@ three = input('Третья переменная: ')
 print(one, two, three)
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_2_5.jpg)
 
 ## Выводы
 VIVOD
@@ -120,7 +120,7 @@ print('Целочисленное деление:', a // b)
 print('Нахождение остатка от деления:', a % b)
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_2_6.jpg)
 
 ## Выводы
 VIVOD
@@ -133,7 +133,7 @@ line = 'Привет мир! '
 print(line * 10)
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_2_7.jpg)
 
 ## Выводы
 VIVOD
@@ -146,7 +146,7 @@ line = 'Привет мир! '
 print(line.count('и'))
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_2_8.jpg)
 
 ## Выводы
 VIVOD
@@ -158,7 +158,7 @@ VIVOD
 print('Привет\nМир')
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_2_9.jpg)
 
 ## Выводы
 VIVOD
@@ -172,7 +172,7 @@ print(line[1])
 print(line[:6])
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_2_10.jpg)
 
 ## Выводы
 VIVOD
