@@ -33,7 +33,7 @@ else:
     print('Не выполняется')
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_3_1.jpg)
 
 ## Выводы
 1
@@ -51,7 +51,7 @@ else:
     print('Переменная больше 10')
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_3_2.jpg)
 
 ## Выводы
 VIVOD
@@ -68,7 +68,7 @@ else:
     print('Переменной нет в этом массиве')
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_3_3.jpg)
 
 ## Выводы
 VIVOD
@@ -88,7 +88,7 @@ else:
     print(f"Переменной нет в массиве numbers и она равна {value}")
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_3_4.jpg)
 
 ## Выводы
 VIVOD
@@ -111,7 +111,7 @@ for i in range(10):
         break
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_3_5.jpg)
 
 ## Выводы
 VIVOD
@@ -131,7 +131,7 @@ for i in string:
         print(f"Буквы '{value}' нет в указанной строке")
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_3_6.jpg)
 
 ## Выводы
 VIVOD
@@ -146,7 +146,7 @@ for i in range(10, -1, -1):
     print(i, value)
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_3_7.jpg)
 
 ## Выводы
 VIVOD
@@ -166,7 +166,7 @@ while value < 100:
         print(value)
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_3_8.jpg)
 
 ## Выводы
 VIVOD
@@ -185,7 +185,7 @@ for i in range(10):
         print(value)
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_3_9.jpg)
 
 ## Выводы
 VIVOD
@@ -205,7 +205,7 @@ else:
     print('В массиве все числа чётные')
 ```
 ### Результат.
-PNG??
+![](Pictures/Lab_3_10.jpg)
 
 ## Выводы
 VIVOD
@@ -225,7 +225,7 @@ for i in range(2):
 print(n)
 ```
 ### Результат.
-PNG??
+![](Pictures/SLab_3_1.jpg)
 
 ## Выводы
 VIVOD
@@ -239,7 +239,7 @@ for i in range(len(string) - 1, -1, -1):
     print(string[i])
 ```
 ### Результат.
-PNG??
+![](Pictures/SLab_3_2.jpg)
 
 ## Выводы
 VIVOD
@@ -263,7 +263,7 @@ else:
     print("Число должно быть в диапазоне от 0 до 10")
 ```
 ### Результат.
-PNG??
+![](Pictures/SLab_3_3.jpg)
 
 ## Выводы
 VIVOD
@@ -293,7 +293,7 @@ print(sentence.startswith("The"))
 print(sentence.endswith("end"))
 ```
 ### Результат.
-PNG??
+![](Pictures/SLab_3_4.jpg)
 
 ## Выводы
 VIVOD
@@ -314,7 +314,7 @@ memory = string
 print(memory)
 ```
 ### Результат.
-PNG??
+![](Pictures/SLab_3_5.jpg)
 
 ## Выводы
 VIVOD
