@@ -25,10 +25,17 @@
 ### Друзья предложили вам поиграть в игру “найди отличия и убери повторения (версия для программистов)”. Суть игры состоит в том, что на вход программы поступает два множества, а ваша задача вывести все элементы первого, которых нет во втором. А вы как раз недавно прошли множества и знаете их возможности, поэтому это не составит для вас труда.
 
 ```python
-def main():
-    print(2+2)
-if __name__ == '__main__':
-    main()
+set_1 = {'White', 'Black', 'Red', 'Pink'}
+set_2 = {'Red', 'Green', 'Blue', 'Red'}
+print('1', set_1 - set_2)
+
+set_1 = {'White', 'Black', 'Red', 'Pink'}
+set_2 = {'Red', 'Green', 'Blue', 'Red'}
+print('2', set_1 - set_2)
+
+set_1 = {'White', 'Black', 'Red', 'Pink'}
+set_2 = {'Red', 'Green', 'Blue', 'Red'}
+print('3', set_1 - set_2)
 ```
 ### Результат.
 ![](Pictures/Lab_5_1.jpg)
@@ -40,12 +47,11 @@ if __name__ == '__main__':
 ### Напишите две одинаковые программы, только одна будет использовать set(), а вторая frozenset() и попробуйте к исходному множеству добавить несколько элементов, например, через цикл.
 
 ```python
-def main():
-    result = 2 + 2
-    return result
-if __name__ == '__main__':
-    answer = main()
-    print(answer)
+a = set('abcdefg')
+print(a)
+for i in range(1,5):
+    a.add(i)
+print(a)
 ```
 ### Результат.
 ![](Pictures/Lab_5_2.jpg)
@@ -57,14 +63,13 @@ if __name__ == '__main__':
 ### На вход в программу поступает список (минимальной длиной 2 символа). Напишите программу, которая будет менять первый и последний элемент списка.
 
 ```python
-def main(one,two):
-    result = one + two
-    return result
-for i in range(5):
-    x = 1
-    y = 10
-    answer = main(x,y)
-    print(answer)
+def replace(input_list):
+    memory = input_list[0]
+    input_list[0] = input_list[-1]
+    input_list[-1] = memory
+
+    return  input_list
+print(replace([1,2,3,4,5]))
 ```
 ### Результат.
 ![](Pictures/Lab_5_3.jpg)
@@ -76,15 +81,8 @@ for i in range(5):
 ### На вход в программу поступает список (минимальной длиной 10 символов). Напишите программу, которая выводит элементы с индексами от 2 до 6. В программе необходимо использовать “срез”.
 
 ```python
-def main(x, *args):
-    one = x
-    two = sum(args)
-    three = float(len(args))
-    print(f"one={one}\ntwo={two}\nthree={three}")
-    return x + sum(args) / float(len(args))
-if __name__ == '__main__':
-    result = main(10,0,1,2,-1,0,-1,1,2)
-    print(f"\nresult={result}")
+a = [12, 54, 32, 57, 843, 2346, 765, 75, 25, 234, 756, 23]
+print(a[2:6])
 ```
 ### Результат.
 ![](Pictures/Lab_5_4.jpg)
@@ -96,17 +94,11 @@ if __name__ == '__main__':
 ### Иван задумался о поиске «бесполезного» числа, полученного из списка. Суть поиска в следующем: он берет произвольный список чисел, находит самое большое из них, а затем делит его на длину списка. Студент пока не придумал, где может пригодиться подобное значение, но ищет у вас помощи в реализации такой функции useless().
 
 ```python
-def main(**kwargs):
-    for i in kwargs.items():
-        print(i[0], i[1])
-
-    print()
-    for key in kwargs:
-        print(f"{key} = {kwargs[key]}")
-if __name__ == '__main__':
-    main(x=[1,2,3], y=[3,3,0], z=[2,3,0], q=[3,3,0], w=[3,3,0])
-    print()
-    main(**{'x': [1,2,3], 'y': [3,3,0]})
+def useless(lst):
+    return max(lst) / len(lst)
+print(useless([3, 5, 7, 3, 33]))
+print(useless([-12.5, 54, 77.3, 0, -36, 98.2, -63, 21.7, 47, -89.6]))
+print(useless([-25.8, 86, 12.5, -56, 73.2, 0, 43, -91.5, 65.9, -7]))
 ```
 ### Результат.
 ![](Pictures/Lab_5_5.jpg)
@@ -120,13 +112,11 @@ if __name__ == '__main__':
 ### Ребята не могут определится каким супергероем они хотят стать. У них есть случайно составленный список супергероев, и вы должны определить кто из ребят будет каким супергероем. Необходимо использовать разделение списков.
 
 ```python
-def main(**kwargs):
-    for i, j in kwargs.items():
-        print(f"{i}. Mean = {mean(j)}")
-def mean(data):
-    return sum(data) / float(len(data))
-if __name__ == '__main__':
-    main(x=[1,2,3], y=(3,3,0))
+superheroes = ['superman', 'spiderman', 'batman']
+nikolay, vasiliy, ivan = superheroes
+print('Николай - ', nikolay)
+print('Василий - ', vasiliy)
+print('Иван - ', ivan)
 ```
 ### Результат.
 ![](Pictures/Lab_5_6.jpg)
@@ -138,13 +128,11 @@ if __name__ == '__main__':
 ### Вовочка, насмотревшись передачи “Слабое звено” решил написать программу, которая также будет находить самое слабое звено (минимальный элемент) и удалять его, только делать он это хочет не с людьми, а со списком. Помогите Вовочке с реализацией программы.
 
 ```python
-from for_import import say_hello
-if __name__ == '__main__':
-    say_hello()
-```
-```python
-def say_hello():
-    print('Hello world!')
+a = [-25.8, 86, 12.5, -56, 73.2, 0, 43, -91.5, 65.9, -7]
+a.sort()
+print('Отсортированный список:\n',a)
+a.pop(0)
+print('Отсортированный список без наименьшего элемента:\n', a)
 ```
 ### Результат.
 ![](Pictures/Lab_5_7.jpg)
@@ -156,15 +144,15 @@ def say_hello():
 ### Михаил решил создать большой n-мерный список, для этого он случайным образом создал несколько списков, состоящих минимум из 3, а максимум из 10 элементов и поместил их в один большой список. Он также как и Иван не знает зачем ему это сейчас нужно, но надеется на то, что это пригодится ему в будущем.
 
 ```python
-import math
-def main():
-    value = int(input('Введите значение: '))
-    print(math.sqrt(value))
-    print(math.sin(value))
-    print(math.cos(value))
-
+from random import randint
+def list_maker():
+    a = [randint(1, 100)] * randint(3,10)
+    return a
 if __name__ == '__main__':
-     main()
+    result = []
+    for i in range(randint(1,5)):
+        result.append(list_maker())
+        print(result)
 ```
 ### Результат.
 ![](Pictures/Lab_5_8.jpg)
@@ -176,24 +164,20 @@ if __name__ == '__main__':
 ### Вы работаете в ресторане и отвечает за статистику покупок, ваша задача сравнить между собой заказы покупателей, которые указаны в разном порядке. Реализуйте функцию superset(), которая принимает 2 множества. Результат работы функции: вывод в консоль одного из сообщений в зависимости от ситуации: 1 - «Супермножество не обнаружено» 2 – «Объект {X} является чистым супермножеством» 3 – «Множества равны»
 
 ```python
-from datetime import datetime as dt
-from datetime import timedelta as td
-
-def main():
-    print(
-        f"Сегодня {dt.today().date()}. "
-        f"День недели - {dt.today().isoweekday()}"
-    )
-    n = int(input('Введите количество дней: '))
-    today = dt.today()
-    result = today + td(days=n)
-    print(
-        f"Через {n} дней будет {result.date()}. "
-        f"День недели - {result.isoweekday()}"
-    )
-
+def superset(set_1, set_2):
+    if set_1 > set_2:
+        print(f'Обьект {set_1} является чистым супермножеством')
+    elif set_1 == set_2:
+        print(f'Множества равны')
+    elif set_1 < set_2:
+        print(f'Обьект {set_2} является чистым супермножеством')
+    else:
+        print('Супермножество не обнаружено')
 if __name__ == '__main__':
-    main()
+    superset({1,8,3,5}, {3,5})
+    superset({1,8,3,5}, {5,3,8,1})
+    superset({3,5}, {5,3,8,1})
+    superset({90,100}, {3,5})
 ```
 ### Результат.
 ![](Pictures/Lab_5_9.jpg)
@@ -205,28 +189,8 @@ if __name__ == '__main__':
 ### Предположим, что вам нужно разобрать стопку бумаг, но нужно начать работу с нижней, “переверните стопку”. Вам дан произвольный список. Представьте его в обратном порядке. Программа должна занимать не более двух строк в редакторе кода.
 
 ```python
-global result
-
-def rectangle():
-    a = float(input("Ширина: "))
-    b = float(input("Высота: "))
-    global result
-    result = a * b
-
-def triangle():
-    a = float(input("Основание: "))
-    h = float(input("Высота: "))
-    global result
-    result = 0.5 * a * h
-
-figure = input("1-прямоугольник, 2-треугольник: ")
-
-if figure == '1':
-    rectangle()
-elif figure == '2':
-    triangle()
-
-print(f"Площадь: {result}")
+my_list = [2, 5, 8, 3]
+print(my_list[::-1])
 ```
 ### Результат.
 ![](Pictures/Lab_5_10.jpg)
@@ -241,25 +205,11 @@ print(f"Площадь: {result}")
 ### • Какой работник посетил ресторан больше всех раз
 
 ```python
-from datetime import datetime # Это импортирует класс datetime из модуля datetime, который позволяет работать с датами и временем.
-from math import sqrt # Это импортирует функцию sqrt (квадратный корень) из модуля math, которая будет использоваться для вычисления расстояния между точками.
-
-def main(**kwargs): # Это определение функции main, которая принимает произвольное количество именованных аргументов в виде словаря kwargs.
-    for key in kwargs.items(): # Здесь начинается цикл, который перебирает каждую пару ключ-значение в kwargs.
-        result = sqrt(key[1][0] ** 2 + key[1][1] ** 2) # Здесь вычисляется расстояние между двумя точками, заданными значениями в key[1], которые представляют собой список с двумя элементами
-        print(result) # Выводится на экран значение переменной result, т.е. расстояние между точками.
-
-if __name__ == '__main__': # Это проверка, является ли текущий скрипт точкой входа.
-    start_time = datetime.now() # Получает текущее время и сохраняет его в переменную
-    main( # Вызывается функция main с пятью именованными аргументами, каждый из которых представляет собой список с двумя элементами.
-        one=[10, 3],
-        two=[5, 4],
-        three=[15, 13],
-        four=[93, 53],
-        five=[133, 15]
-    )
-    time_costs = datetime.now() - start_time # Вычисляется разница между текущим временем и временем, сохраненным в start_time.
-    print(f"Время выполнения программы - {time_costs}") # Выводится на экран время выполнения программы, которое было вычислено в предыдущем пункте.
+from collections import Counter
+list = [8734, 2345, 8201, 6621, 9999, 1234, 5678, 8201, 8888, 4321, 3365, 1478, 9865, 5555, 7777, 9998, 1111, 2222, 3333, 4444, 5556, 6666, 5410, 7778, 8889, 4445, 1439, 9604, 8201, 3365, 7502, 3016, 4928, 5837, 8201, 2643, 5017, 9682, 8530, 3250, 7193, 9051, 4506, 1987, 3365, 5410, 7168, 7777, 9865, 5678, 8201, 4445, 3016, 4506, 4506]
+print(len(list))
+print(len(set(list)))
+print(Counter(list).most_common(1)[0][0])
 ```
 ### Результат.
 ![](Pictures/SLab_5_1.jpg)
@@ -274,22 +224,12 @@ if __name__ == '__main__': # Это проверка, является ли те
 ### • Все результаты начиная с 10
 
 ```python
-from random import randint
+list = [10.2, 14.8, 19.3, 22.7, 12.5, 33.1, 38.9, 21.6, 26.4, 17.1, 30.2, 35.7, 16.9, 27.8, 24.5, 16.3, 18.7, 31.9, 12.9, 37.4]
+list_sorted = sorted(list)
 
-def dice():
-    number = randint(1, 6)
-
-    print(f"Значение кубика: {number}")
-
-    if number == 5 or number == 6:
-        print("Вы победили")
-    elif number == 3 or number == 4:
-        dice()
-    elif number == 1 or number == 2:
-        print("Вы проиграли")
-
-if __name__ == '__main__':
-    dice()
+print(list_sorted[0:4])
+print(list_sorted[-3:])
+print(list[10:])
 ```
 ### Результат.
 ![](Pictures/SLab_5_2.jpg)
@@ -301,16 +241,20 @@ if __name__ == '__main__':
 ### Преподаватель по математике придумал странную задачу. У вас есть три списка с элементами, каждый элемент которых – длина стороны треугольника, ваша задача найти площади двух треугольников, составленные из максимальных и минимальных элементов полученных списков. Результатом выполнения задачи будет: листинг кода, и вывод в консоль, в котором будут указаны два этих значения.
 
 ```python
-import time
-from datetime import datetime
+from math import sqrt
 
-duration = 5
+one = [12, 25, 3, 48, 71]
+two = [5, 18, 40, 62, 98]
+three = [4, 21, 37, 56, 84]
 
-for i in range(duration):
-    current_time = datetime.now()
-    print("В данным момент:", current_time)
+mp = (max(one) + max(two) +max(three)) / 2
+mip = (min(one) + min(two) +min(three)) / 2
 
-    time.sleep(1)
+max_square = sqrt(mp * (mp - max(one)) * (mp - max(two)) * (mp - max(three)))
+min_square = sqrt(mip * (mip - min(one)) * (mip - min(two)) * (mip - min(three)))
+
+print(max_square)
+print(min_square)
 ```
 ### Результат.
 ![](Pictures/SLab_5_3.jpg)
@@ -322,11 +266,16 @@ for i in range(duration):
 ### Никто не любит получать плохие оценки, поэтому Борис решил это исправить. Допустим, что все оценки студента за семестр хранятся в одном списке. Ваша задача удалить из этого списка все двойки, а все тройки заменить на четверки.
 
 ```python
-def main(*args):
-    return sum(args) / len(args)
+first = [2, 3, 4, 5, 3, 4, 5, 2, 2, 5, 3, 4, 3, 5, 4]
+second = [4, 2, 3, 5, 3, 5, 4, 2, 2, 5, 4, 3, 5, 3, 4]
+third = [5, 4, 3, 3, 4, 3, 3, 5, 5, 3, 3, 3, 3, 4, 4]
 
-if __name__ == '__main__':
-    print(main(15, 25, 35))
+def modify_grades(grades):
+    return [4 if grade == 3 else grade for grade in grades if grade != 2]
+
+print(modify_grades(first))
+print(modify_grades(second))
+print(modify_grades(third))
 ```
 ### Результат.
 ![](Pictures/SLab_5_4.jpg)
@@ -338,21 +287,28 @@ if __name__ == '__main__':
 ### Вам предоставлены списки натуральных чисел, из них необходимо сформировать множества. При этом следует соблюдать это правило: если какое-либо число повторяется, то преобразовать его в строку по следующему образцу: например, если число 4 повторяется 3 раза, то в множестве будет следующая запись: само число 4, строка «44», строка «444».
 
 ```python
-from for_import import square
+list_1 = [1, 1, 3, 3, 1]
+list_2 = [5, 5, 5, 5, 5, 5, 5]
+list_3 = [2, 2, 1, 2, 2, 5, 6, 7, 1, 3, 2, 2]
 
-if __name__ == '__main__':
-    a = int(input())
-    b = int(input())
-    c = int(input())
 
-    print(square(a, b, c))
-```
-```python
-from math import sqrt
+def list_to_set(lst):
+    result_set = set()
+    counts = {}
 
-def square(a, b, c):
-    p = (a + b + c) / 2
-    return sqrt(p * (p - a) * (p - b) * (p - c))
+    for num in lst:
+        counts[num] = counts.get(num, 0) + 1
+
+    for num, count in counts.items():
+        result_set.add(num)
+        for i in range(2, count + 1):
+            result_set.add(str(num) * i)
+
+    return result_set
+
+print(list_to_set(list_1))
+print(list_to_set(list_2))
+print(list_to_set(list_3))
 ```
 ### Результат.
 ![](Pictures/SLab_5_5.jpg)
