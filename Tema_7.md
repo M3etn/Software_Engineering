@@ -179,6 +179,7 @@ with open('rows_300.csv', 'w', encoding='utf-8', newline='') as f:
 ```
 ### Результат.
 ![](Pictures/Lab_7_10.jpg)
+![](Pictures/Lab_7_10_1.jpg)
 
 ## Выводы
 Создали rows_300.csv, согласно условиям в задании
